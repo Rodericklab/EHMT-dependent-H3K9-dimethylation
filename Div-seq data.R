@@ -39,7 +39,7 @@ library(gplots)
 
 #load Div seq mouse CM nuclei (Edu +ve/-ve A366) data from the GEOXXX
 
-data_dir <- "D:/KU Leuven/Research/Analysis/Analysis/Mouse project/Novel/Mouse project/Final/Deposit/"
+data_dir <- "~"
 data_file <- file.path(data_dir, "Mouse_merged_counts_Edu+ve_vs_Edu-ve_A366.csv")
 
 # Read the data
@@ -263,7 +263,7 @@ print(plot)
 
 #NO_A366 data from the GEOXXX
 
-data_dir <- "D:/KU Leuven/Research/Analysis/Analysis/Mouse project/Novel/Mouse project/Final/Deposit/"
+data_dir <- "~"
 data_file <- file.path(data_dir, "Mouse_merged_counts_Edu+ve_vs_Edu-ve_NO_A366.csv")
 
 # Read the data
