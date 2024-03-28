@@ -37,7 +37,7 @@ library(forcats) # for fct_reorder()
 library(gplots)
 
 
-#load Div seq mouse CM nuclei (Edu +ve/-ve A366) data from the GEOXXX
+#load Div seq mouse CM nuclei (Edu +ve/-ve A366) data from the GSE261924
 
 data_dir <- "~"
 data_file <- file.path(data_dir, "Mouse_merged_counts_Edu+ve_vs_Edu-ve_A366.csv")
@@ -605,7 +605,7 @@ plot <- ggplot(upregulated_gos, aes(y= Term, x = -log10(Adjusted.P.value), fill 
     colors = c('orange', 'Brown'),  # Custom color gradient
     name = "Counts", 
     limits = range(upregulated_gos$Overlap, na.rm = TRUE),
-    breaks = c(11, 14, 23),  # Specify breaks at 5, 6, and 8
+    breaks = c(11, 14, 23),  # Specify breaks
     labels = c("11", "14", "23")  # Corresponding labels for these breaks
   ) +
   labs(x = "-log10(qvalue)", y = "") + 
