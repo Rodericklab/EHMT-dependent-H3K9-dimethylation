@@ -51,7 +51,7 @@ library(edgeR)
 library(limma)
 library(pheatmap)
 
-#load VASAseq MI data from the GEOXXX
+#load VASAseq MI data from the GSE261925
 
 data_dir <- "~"
 data_file <- file.path(data_dir, "WT_KO_MI.csv")
