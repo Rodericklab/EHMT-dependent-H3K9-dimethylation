@@ -261,7 +261,7 @@ print(plot)
 
 
 
-#NO_A366 data from the GEOXXX
+#NO_A366 data from the GSE261924
 
 data_dir <- "~"
 data_file <- file.path(data_dir, "Mouse_merged_counts_Edu+ve_vs_Edu-ve_NO_A366.csv")
@@ -410,7 +410,7 @@ plot <- ggplot(upregulated_gos, aes(y= Term, x = -log10(Adjusted.P.value), fill 
     colors = c('orange', 'Brown'),  # Custom color gradient
     name = "Counts", 
     limits = range(upregulated_gos$Overlap, na.rm = TRUE),
-    breaks = c(10, 15, 23),  # Specify breaks at 5, 6, and 8
+    breaks = c(10, 15, 23),  # Specify breaks
     labels = c("10", "15", "23")  # Corresponding labels for these breaks
   ) +
   labs(x = "-log10(qvalue)", y = "") + 
@@ -454,7 +454,7 @@ plot <- ggplot(downregulated_gos, aes(y= Term, x = -log10(P.value), fill = Overl
     colors = c('#B3E5FC', '#311B92'),  # Custom color gradient
     name = "Counts", 
     limits = range(downregulated_gos$Overlap, na.rm = TRUE),
-    breaks = c(2, 3, 4),  # Specify breaks at 5, 6, and 8
+    breaks = c(2, 3, 4),  # Specify breaks
     labels = c("2", "3", '4')  # Corresponding labels for these breaks
   ) +
   labs(x = "-log10(qvalue)", y = "") + 
@@ -476,9 +476,6 @@ plot <- ggplot(downregulated_gos, aes(y= Term, x = -log10(P.value), fill = Overl
 # Print the plot
 print(plot)
 
-
-
-# Assuming downregulated_gos is already defined and contains "Down-regulated" genes
 
 plot <- ggplot(downregulated_gos, aes(y= Term, x = -log10(P.value), fill = Overlap)) + 
   geom_bar(stat = 'identity', width = .7, color = "black", linewidth = 1.05) + # Add black borders to bars
