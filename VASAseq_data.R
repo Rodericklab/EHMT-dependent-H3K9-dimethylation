@@ -170,7 +170,7 @@ pheatmap(x, cluster_cols = T,cluster_rows = F, clustering_distance_rows = "eucli
 
 
 
-#load VASAseq Sham data from the GEOXXX
+#load VASAseq Sham data from the GSE261925
 
 data_dir <- "~"
 data_file <- file.path(data_dir, "WT_KO_Sham.csv")
